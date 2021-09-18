@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  <h2>
+    Listado de anuncios disponibles en <%= title %>
+  </h2>
+
+  <div class="container-anuncios">
+    <% if (anuncios.length !==0) { %>
+      <% anuncios.forEach( anuncio=> { %>
+        <ul>
+          <li> Nombre: <%= anuncio.nombre %> </li>
+          <li>
+            <% if (anuncio.venta===true) { %>
+              Tipo: Producto en venta
+              <% } else { %>
+                Tipo: Búsqueda
+                <% } %>
+          </li>
+          <li> Precio: <%= anuncio.precio %> € </li>
+          <li> Etiquetas:
+            <% anuncio.tags.forEach(tag=> { %>
+              <i> <%= tag %>, </i>
+              <% }); %>
+          </li>
+          <img src="./images/<%= anuncio.foto %>" alt="imagen producto" style="max-width: 100px; max-height: 100px;">
+        </ul>
+        <% }) %>
+          <% } else { %>
+            <p> No hay anuncios disponibles. </p>
+            <% } %>
+  </div>
+
+</body>
+
+</html>
