@@ -1,4 +1,4 @@
-# PRÁCTICA: INTRODUCCIÓN A NODE.JS
+# PRÁCTICA: Desarrollo BackEnd con Node.js
 
 ## Objetivo
 Desarrollar una API que se ejecutará en el servidor de un servicio de venta de artículos de segunda mano llamado ***Nodepop***.
