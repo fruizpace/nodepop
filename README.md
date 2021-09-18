@@ -113,7 +113,5 @@ La estructura de los filtros es:
       - precio: 35.00
       - tags: lifestyle
       - tags: motor
-    
-    ![REST CLIENT EXAMPLE](public/readmeimgs/post_example.png)
 
 - Si todo está correcto, se mostrará el anuncio nuevo en formato JSON.
